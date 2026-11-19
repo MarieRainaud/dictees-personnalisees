@@ -1,0 +1,20 @@
+name: dictees-personnalisees-local
+services:
+  application:
+    build: .
+    ports:
+      - '127.0.0.1:8122:8080'
+    env_file:
+      - .env
+      - .env.local
+    environment:
+      PORT: '8080'
+      HOST: 0.0.0.0
+      DATA_PATH: /data/application.sqlite
+      OIDC_INTERNAL_ORIGIN: http://host.docker.internal:8098
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    volumes:
+      - local-data:/data
+volumes:
+  local-data:

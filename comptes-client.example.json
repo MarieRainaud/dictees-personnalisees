@@ -1,0 +1,27 @@
+{
+  "clientId": "dictees-personnalisees",
+  "name": "Dictées personnalisées",
+  "enabled": true,
+  "protocol": "openid-connect",
+  "publicClient": false,
+  "clientAuthenticatorType": "client-secret",
+  "standardFlowEnabled": true,
+  "implicitFlowEnabled": false,
+  "directAccessGrantsEnabled": false,
+  "serviceAccountsEnabled": false,
+  "redirectUris": [
+    "REMPLACER_PAR_ORIGINE/auth/callback"
+  ],
+  "webOrigins": [],
+  "attributes": {
+    "pkce.code.challenge.method": "S256",
+    "post.logout.redirect.uris": "REMPLACER_PAR_ORIGINE/",
+    "backchannel.logout.url": "REMPLACER_PAR_ORIGINE/auth/backchannel-logout",
+    "backchannel.logout.session.required": "true"
+  },
+  "defaultClientScopes": [
+    "basic",
+    "profile"
+  ],
+  "optionalClientScopes": []
+}

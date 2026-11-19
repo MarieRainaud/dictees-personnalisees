@@ -1,0 +1,53 @@
+/* Images locales téléchargées : Font Awesome Free, licence dans LICENSE.txt. */
+.image-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  -webkit-mask: var(--icon-image) center / contain no-repeat;
+  mask: var(--icon-image) center / contain no-repeat;
+}
+
+.icon-github {
+  --icon-image: url("./github.svg");
+}
+
+.icon-linkedin {
+  --icon-image: url("./linkedin.svg");
+}
+
+.icon-book-open {
+  --icon-image: url("./book-open.svg");
+}
+
+.icon-divide {
+  --icon-image: url("./divide.svg");
+}
+
+.icon-clock {
+  --icon-image: url("./clock.svg");
+}
+
+.icon-language {
+  --icon-image: url("./language.svg");
+}
+
+.icon-timeline {
+  --icon-image: url("./timeline.svg");
+}
+
+.icon-spin {
+  animation: icon-rotation 1s linear infinite;
+}
+@keyframes icon-rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .icon-spin {
+    animation: none;
+  }
+}

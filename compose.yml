@@ -1,0 +1,27 @@
+# Préparation Simple Containers. Publication exécutée uniquement par l’utilisatrice.
+services:
+  dictees-personnalisees-partage:
+    container_name: dictees-personnalisees
+    cpus: '0.1'
+    mem_limit: 256m
+    build: .
+    ports:
+      - '8080:8080'
+    environment:
+      APP_ORIGIN: '${APP_ORIGIN:?Adresse publique à configurer}'
+      OIDC_ISSUER: '${OIDC_ISSUER:?Service Comptes à configurer}'
+      OIDC_CLIENT_SECRET: '${OIDC_CLIENT_SECRET:?Secret du client à configurer}'
+      SESSION_KEY: '${SESSION_KEY:?Clé de session à configurer}'
+      SECURE_COOKIES: '1'
+      AI_PROVIDER: '${AI_PROVIDER:-none}'
+      GEMINI_API_KEY: '${GEMINI_API_KEY:-}'
+      AI_MODEL: '${AI_MODEL:-}'
+      OLLAMA_URL: '${OLLAMA_URL:-}'
+      DATA_UID: '21003'
+      DATA_PATH: /atelier-data/dictees-personnalisees/application.sqlite
+    volumes:
+      - bases-partagees-fichiers:/atelier-data
+
+volumes:
+  bases-partagees-fichiers:
+    external: true

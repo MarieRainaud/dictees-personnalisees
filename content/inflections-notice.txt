@@ -1,0 +1,20 @@
+Ressources linguistiques utilisées uniquement pour reconnaître les formes fléchies.
+
+Lexique 3.83 — Boris New et Christophe Pallier et leurs collaborateurs.
+Source : https://www.lexique.org/databases/Lexique383/Lexique383.tsv
+Référence : New, B., Pallier, C., Ferrand, L. et Matos, R. (2001).
+Une base de données lexicales du français contemporain sur internet : LEXIQUE.
+L'Année psychologique, 101, 447-462.
+Licence : Creative Commons Attribution — Partage dans les mêmes conditions.
+https://creativecommons.org/licenses/by-sa/4.0/
+Seules les colonnes orthographe, lemme et catégorie grammaticale sont conservées.
+Les familles nominales et adjectivales ont été regroupées et compactées.
+
+Lefff — Lexique des formes fléchies du français, Benoît Sagot et collaborateurs.
+Ressource de conjugaisons issue de french-verbs-lefff 3.4.0 (RosaeNLG).
+https://github.com/RosaeNLG/rosaenlg/tree/master/packages/french-verbs-lefff
+Les données dérivées restent sous licence LGPL-LR ; texte dans lefff-resource-license.html. Le conditionnement RosaeNLG est sous Apache 2.0 (lefff-license.txt).
+Les familles verbales ont été dédupliquées et compactées.
+
+inflections.json contient ces familles transformées, sous leurs licences respectives.
+Les autres fichiers de l'application ne sont pas des adaptations de ces données.

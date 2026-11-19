@@ -1,0 +1,6 @@
+{
+  "slug": "dictees-personnalisees",
+  "title": "Dictées personnalisées",
+  "entry": "dictations.js",
+  "port": 8122
+}
